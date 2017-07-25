@@ -1,20 +1,24 @@
-//(function(){
-//  $("#add").click(function(e){
-//    var toCart = $("#storeList option:selected");
-//    console.log(toCart);
-//    if(toCart.length===0){
-//      alert("Please select a product.");
-//      e.preventDefault();
-//    }
-
-//    $("#cartList").append($(toCart).clone());
-//  })
-//}(jQuery));
-
 function addProd(){
-  var prods = document.getElementById("storeList");
+  var store = document.getElementById("storeList");
   var cart = document.getElementById("cartList");
-  var product = prods.options[prods.selectedIndex].text;
+  var prod = store.options[store.selectedIndex];
 
-  cart.add(product);
+  cart.appendChild(prod).clone();
+}
+
+function removeProd(){
+  var store = document.getElementById("storeList");
+  var cart = document.getElementById("cartList");
+  var prod = cart.options[cart.selectedIndex];
+
+  store.appendChild(prod);
+}
+
+function buildArray(){
+  var cart = document.getElementById("cartList");
+  var cartLeng = cart.options.length;
+
+  for(i = 0; i < cartLeng; i++){
+
+  }
 }
