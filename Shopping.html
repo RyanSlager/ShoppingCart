@@ -1,0 +1,32 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css\styles.css"></link>
+  <script src="javascript\shop.js" type="text/javascript"></script>
+  <title>Shopping Cart</title>
+</head>
+  <body>
+    <div class="prodList">
+      <select class="inStore" id="storeList" size="10">
+        <option value="cheerios">Cheerios</option>
+        <option value="apple">Apple</option>
+        <option value="mac-and-cheese">Mac and Cheese</option>
+        <option value="spaghetti">Spaghetti</option>
+        <option value="ground-beef">Ground Beef</option>
+        <option value="whiskey">Whiskey</option>
+        <option value="cheese">Cheese</option>
+      </select>
+
+      <input type="button" class="addButton" id="add" value="add" onclick="addProd()"></button>
+    </div>
+
+    <div class="cart">
+      <select class="inStore" id="cartList" size="10">
+
+      </select>
+      <input type="button" class="removeButton" id="remove" value="remove"></button>
+    </div>
+
+  </body>
+</html>
